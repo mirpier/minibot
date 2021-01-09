@@ -1,6 +1,6 @@
 FROM ubuntu:18.04
 
-LABEL maintainer=""
+LABEL maintainer=" "
 LABEL version="0.1"
 LABEL description="minichatbot on Ubuntu 18.04"
 
