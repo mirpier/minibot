@@ -5,8 +5,8 @@ from keras.layers import Dense, Dropout
 from keras.models import Sequential, load_model
 from keras.optimizers import SGD
 import nltk  # analisi linguistica e elaborare i dati di input dell’utente
-#nltk.download('punkt')
-#nltk.download('wordnet')
+nltk.download('punkt')
+nltk.download('wordnet')
 from nltk.stem import WordNetLemmatizer
 
 # Inizializzazione (intens.json contiente una serie di pattern che utilizzeremo per recuperare la risposta più adeguata dell’utente)
