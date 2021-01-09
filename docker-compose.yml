@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  minibot:
+    image: minibot
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 8089:8089
