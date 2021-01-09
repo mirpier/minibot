@@ -1,0 +1,36 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.0.4/socket.io.min.js"></script>
+<script>
+
+  var socket = io.connect( 'http://localhost:8089' )
+      // broadcast a message
+  socket.on( 'connect', function() {
+    socket.emit( 'my event', {
+      data: 'User Connected'
+    } )
+
+    let user_name = "Andrea"
+    let user_input = "Ciao"
+
+    //invia il messaggio
+    socket.emit( 'my eventes', {
+    user_name : user_name,
+    message : user_input
+    } )
+
+  } )
+
+  // cattura la risposta
+  socket.on( 'my response', function( msg ) {
+    console.log( msg )
+    if( typeof msg.user_name !== 'undefined' ) {
+      //msg.user_name
+      //msg.message
+      //msg.bot
+      //msg.answer
+      console.log(msg.answer)
+      document.write(msg.answer)
+    }
+  } )
+
+</script>
