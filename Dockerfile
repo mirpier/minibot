@@ -1,6 +1,6 @@
 FROM ubuntu:18.04
 
-LABEL maintainer="Pierandrea Mirino"
+LABEL maintainer="P. Mirino"
 LABEL version="0.1"
 LABEL description="minichatbot on Ubuntu 18.04"
 
