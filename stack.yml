@@ -16,3 +16,5 @@ services:
       replicas: 1
     volumes:
       - "minibot:/minibot"
+    networks:
+      - bilserver-core
