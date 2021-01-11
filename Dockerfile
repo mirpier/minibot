@@ -1,12 +1,13 @@
 FROM ubuntu:18.04
 
-LABEL maintainer="P. Mirino"
+LABEL maintainer="Pierandre Mirino"
 LABEL version="0.1"
 LABEL description="minichatbot on Ubuntu 18.04"
 
 ENV PYTHONDONTWRITEBYTECODE=1
 
 ENV PYTHONUNBUFFERED=1
+
 
 ENV DEBIAN_FRONTEND noninteractive 
 
