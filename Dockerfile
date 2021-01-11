@@ -15,11 +15,11 @@ ENV TZ=Europe/Rome
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 RUN apt-get update && apt-get install -y nmap\
-	libopencv-dev \
+    libopencv-dev \
     python3-pip \
     python3.6 \
     python3-dev \
-	python3-opencv && \
+    python3-opencv && \
     rm -rf /var/lib/apt/lists/*
 
 RUN pip3 install --upgrade pip &&\
@@ -46,6 +46,6 @@ COPY . /minibot
 
 EXPOSE  8089
 
-VOLUME /minibot
+VOLUME minibot
 
 CMD [ "python3", "application.py"]
