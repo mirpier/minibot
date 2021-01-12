@@ -4,17 +4,11 @@ networks:
   bilserver-core:
     external: true
 
-volumes:
-  minibot:
-    name: minibot
-
 services:
   minibot:
     image: ${REGISTRY_SERVER}${REPOSITORY}
     deploy:
       mode: replicated
       replicas: 1
-    volumes:
-      - "minibot:/minibot"
     networks:
       - bilserver-core
