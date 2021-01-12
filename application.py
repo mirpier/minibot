@@ -32,7 +32,7 @@ def handle_my_custom_event1( json1 ):
       #tb._SYMBOLIC_SCOPE.value = True #Correzione baco keras
       answer=minbot.dialoga(message)
       json1['answer'] = answer
-      json1['bot']='Mininterno AI'
+      json1['bot']='Psyco'
       print( 'recived my event: ' + str(json1 ))
       socketio.emit( 'my response', json1, callback=messageRecived )        
     
