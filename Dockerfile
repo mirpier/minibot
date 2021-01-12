@@ -1,6 +1,6 @@
 FROM ubuntu:18.04
 
-LABEL maintainer="P. Mirino"
+LABEL maintainer="Pierandrea Mirino"
 LABEL version="0.1"
 LABEL description="minichatbot on Ubuntu 18.04"
 
@@ -14,7 +14,7 @@ ENV DEBIAN_FRONTEND noninteractive
 ENV TZ=Europe/Rome
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
-RUN apt-get update && apt-get install -y nmap && apt-get install -y curl\
+RUN apt-get update && apt-get install -y nmap && apt-get install -y curl && apt-get install -y nano \
     libopencv-dev \
     python3-pip \
     python3.6 \
