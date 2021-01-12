@@ -39,8 +39,5 @@ def handle_my_custom_event1( json1 ):
 if __name__ == '__main__':
     app.config['PREFERRED_URL_SCHEME'] = 'https'   
     app.wsgi_app = ProxyFix(app.wsgi_app)   
-    try:
-        socketio.run( app, port=8089, host='0.0.0.0', debug=True, keyfile='key.pem', certfile='cert.pem' )
-    except:
-        pass #ignora l'errore
+    socketio.run( app, port=8089, host='0.0.0.0', debug=True, keyfile='key.pem', certfile='cert.pem' )  
  
