@@ -46,4 +46,6 @@ COPY . /minibot
 
 EXPOSE  8089
 
+VOLUME minibot
+
 CMD [ "python3", "application.py"]
