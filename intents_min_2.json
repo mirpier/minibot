@@ -1,0 +1,48 @@
+{"intents": [
+  {"tag": "saluti",
+    "patterns": ["Salve", "Ciao", "Hey!", "C'è qualcuno?", "Hola", "Buongiorno", "Buonasera", "Buonanotte", "Buona serata"],
+    "responses": ["Salve", "Salve. Come possiamo aiutarla?", "Benvenuto. Come possiamo aiutarla?"],
+    "context": [""]
+  },
+  {"tag": "rinnovopassap",
+    "patterns": ["Come si rinnova il passaporto", "Che devo fare per rinnovare il passaporto", "Buongiorno, devo rinnovare il passaporto", "Ho il passaporto scaduto e devo rinnovarlo. Che devo fare?", "Come si rinnova il passaporto?"],
+    "responses": ["Il passaporto non si rinnova più. Vada a questo link per farne uno nuovo", "Il passaporto non si rinnova più. Segua le indicazioni a questo link per farne uno nuovo"],
+    "context": [""]
+  },
+  {"tag": "smarrimentopassap",
+    "patterns": ["Questa estate al mare mi hanno rubato il passaporto. Che devo fare?", "Ho perso il passaporto. Che devo fare?","Ho smarrito il passaporto","Non trovo più il passaporto"],
+    "responses": ["Faccia la denuncia seguendo queste istruzioni", "A questo link può fare la denuncia"],
+    "context": [""]
+  },
+{"tag": "rinnovoportoarmi",
+    "patterns": ["Come si rinnova il porto d'armi", "Che devo fare per rinnovare il porto d'armi", "Buongiorno, devo rinnovare il porto d'armi", "Ho il porto d'armi scaduto e devo rinnovarlo. Che devo fare?", "Come si rinnova il porto d'armi?"],
+    "responses": ["Il porto d'armi si rinnova seguendo le istruzioni a questo link.", "Segua le indicazioni a questo link per farne uno nuovo"],
+    "context": [""]
+  },
+  {"tag": "smarrimentoportoarmi",
+    "patterns": ["Questa estate al mare mi hanno rubato il porto d'armi. Che devo fare?", "Ho perso il porto d'armi. Che devo fare?","Ho smarrito il porto d'armi","Non trovo più il porto d'armi"],
+    "responses": ["Faccia la denuncia seguendo queste istruzioni", "A questo link può fare la denuncia"],
+    "context": [""]
+  },
+  {"tag": "grazie",
+    "patterns": ["Grazie", "Grazie mille", "Perfetto", "Grazie per avermi aiutato"],
+    "responses": ["Di nulla", "E' stato un piacere", "Grazie a voi"],
+    "context": [""]
+  },
+  {"tag": "impossibile",
+    "patterns": ["Ho smarrito la carta di identità", "Devo rinnovare la patente", "Devo rinnovare la carta di identità.", "Devo rinnovare la patente"],
+    "responses": ["Non ci occupiamo di questo", "Non è di nostra competenza"],
+    "context": [""]
+  },
+  {"tag": "noanswer",
+    "patterns": [""],
+    "responses": ["Non ho capito", "Scusi, potrebbe ripetere?", "Provi ad usare parole più semplici."],
+    "context": [""]
+  },
+  {"tag": "introspezione_bot",
+    "patterns": ["Chi sei?", "Hai una coscienza?", "Hai un nome?", "Sei un'intelligenza artificiale?"],
+    "responses": ["Si sono una intelligenza artificiale"],
+    "context": [""]
+  }
+]
+}
