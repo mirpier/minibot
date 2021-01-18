@@ -15,7 +15,7 @@ classes = []
 documents = []
 ignore_words = ['?', '!']
 
-df = pd.read_json("intents_min_2.json", orient="records")
+df = pd.read_json("intentsV7.json", orient="records")
 
 for intent in df['intents']:
         
